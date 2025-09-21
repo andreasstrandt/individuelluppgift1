@@ -1,0 +1,83 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 2rem;
+    
+    border: 2px solid black;
+
+}
+
+@media (min-width: 640px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.navlinks {
+    margin-right: 40px;
+    place-content: center;
+}
+
+.hamburger {
+    width: 30px;
+    height: auto;
+}
+
+.search {
+    display: flex;
+    margin-left: auto;
+
+}
+
+.search input {
+    width: 313px;
+}
+
+.Huvudarea {
+    height: auto;
+    width: 36rem;
+    margin-left: 10rem;
+    padding: 1rem;
+}
+
+.nyheter {
+    display: flex;
+    gap: 20px;
+}
+
+.mainnyheter {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sidebar-reklam {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    padding: 2rem;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.socials {
+    text-decoration: none;
+}
