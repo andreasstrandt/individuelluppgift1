@@ -3,14 +3,11 @@
     flex-direction: column;
     justify-content: flex-start;
     font-size: 2rem;
-    
     border: 2px solid black;
-
 }
 
 @media (min-width: 640px) {
     .navbar {
-        display: flex;
         flex-direction: row;
     }
 }
@@ -18,6 +15,9 @@
 .navlinks {
     margin-right: 40px;
     place-content: center;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .hamburger {
@@ -35,44 +35,71 @@
     width: 313px;
 }
 
-.Huvudarea {
-    height: auto;
-    width: 36rem;
-    margin-left: 10rem;
-    padding: 1rem;
-}
-
-.nyheter {
+main {
     display: flex;
-    gap: 20px;
 }
 
 .mainnyheter {
+    display: flex;
+    flex-direction: column;
     flex: 3;
+    gap: 20px;
+    margin: 5px;
+    /* border: 1px solid red; */
+
+}
+
+.nyheter {
+    border-bottom: 1px solid lightgray;
+    margin-right: 1rem;
+}
+
+.nyhet {
+    text-decoration: none;
+    color: black;
+}
+
+.nyhet h2 {
+    font-size: 2rem;
+}
+
+.nyhet p {
+    font-size: 1.2rem;
+}
+
+.nyhetsbild {
+    height: auto;
+    width: 100%;
 }
 
 .sidebar {
-    flex: 1;
-    padding: 20px;
-    border: 2px solid black;
-
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    display: none;
 }
 
-.sidebar-reklam {
-    display: flex;
-    max-width: 100%;
-    height: auto;
+@media (min-width: 670px) {
+    .sidebar {
+        flex: 1;
+        padding: 20px;
+        border: 2px solid black;
+
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .sidebar-reklam {
+        display: flex;
+        max-width: 100%;
+        height: auto;
+    }
 }
-
-
 
 footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 8rem;
+    gap: 1rem;
     padding: 2rem;
     border: 2px solid black;
     font-weight: bold;
@@ -80,4 +107,12 @@ footer {
 
 .socials {
     text-decoration: none;
+}
+
+@media (min-width: 670px) {
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        gap: 8rem;
+    }
 }
