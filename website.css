@@ -43,6 +43,7 @@ body {
         display: flex;
         margin-left: auto;
     }
+    
 }
 
 
@@ -143,6 +144,11 @@ main {
 
 .sidebar {
     display: none;
+}
+
+.sidebar-style{
+    text-decoration: none;
+    color: black;
 }
 
 @media (min-width: 670px) {
